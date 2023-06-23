@@ -1,0 +1,8 @@
+# Archivos generados por Parcel
+/dist
+.cache
+.cache-loader
+.parcel-cache
+
+# Dependencias del proyecto
+/node_modules

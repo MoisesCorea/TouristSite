@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+body {
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(47, 47, 47);
+  line-height: 1.3rem;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: rgb(218, 43, 99);
+  line-height: 1.9rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: rgb(47, 47, 47);
+  line-height: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: rgb(218, 43, 99);
+  line-height: 1.7rem;
+}
+
+.fontSize2 {
+  font-size: 0.8rem;
+}
+
+
+.center {
+  text-align: center;
+}
+
+
+
+.imgResponsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.linkCard {
+  text-decoration: none;
+  color: rgb(47, 47, 47);
+  font-weight: 700;
+  display: block;
+  margin-top: 1rem;
+}
+
+.linkCard:hover {
+
+  color: rgb(218, 43, 99);
+}
+
+article {
+  margin-top: 3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2rem;
+  gap: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(47, 47, 47, 0.1) 0px 9px 10px -10px;
+
+}
+ 
+
+#logo img {
+  width: 8rem;
+  position: relative;
+  left: 1.2rem;
+}
+
+#logo span{
+  font-size: 1rem;
+  font-weight: bolder;
+  display: block;
+}
+
+
+header nav ul {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding-left: 0;
+}
+
+header nav ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgb(218, 43, 99);
+  text-align: center;
+}
+
+header nav ul li:hover {
+  background-color: rgb(47, 47, 47);
+}
+
+header nav ul li a {
+
+  padding: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255)
+}
+
+
+
+main {
+
+  background-color: rgb(255, 255, 255);
+  padding: 0 1rem 4rem 1rem;
+}
+
+.sr {
+  position:absolute;
+  height:1px;    
+  width:1px;    
+  overflow:hidden;    
+  clip:rect(1px, 1px, 1px, 1px);
+}
+
+
+footer {
+  background-color: rgb(47, 47, 47);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 2rem;
+}
+
+
+.cotainer-foot-columns{
+  display: grid;
+  grid-template-rows: auto;
+}
+
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: rgb(218, 43, 99)
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer img {
+  width: 8rem;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/*--------------------------------Portada----------------------------*/
+#portada {
+  position: relative;
+  background: url(images/fondo.jpg) no-repeat center;
+  
+  background-size: cover;
+  height: 80vh;
+  width: auto;
+}
+
+.portada-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.portada-contenido h1 {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.portada-contenido p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portada-contenido button {
+  background-color: rgb(218, 43, 99);
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(225, 91, 113);
+}
+
+.clip-container {
+  position: absolute;
+  width: 120px; /* Ajusta el tamaño según tus necesidades */
+  height: 120px; /* Ajusta el tamaño según tus necesidades */
+  background-color: rgba(218, 43, 99, 1); /* Hace el clip semi-transparente */
+}
+
+
+
+.top-left {
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+/*--------------------------------Sitios.html-----------------------*/
+
+.titles {
+  margin-bottom: 4rem;
+}
+
+#boxCards2 {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+  justify-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+#card p {
+  color: rgb(47, 47, 47);
+  display: block;
+  line-height: 1.4rem;
+  font-weight: 700;
+}
+
+#card .infoCard p {
+  font-weight: 300 !important;
+}
+
+.card {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-bottom: solid 1px rgba(33, 35, 38, 0.1);
+  padding-bottom: 2rem;
+}
+
+.card .infoCard a{
+  text-decoration: none;
+}
+
+/*---------------------------Detalles--------------------------*/
+
+
+
+figure figcaption {
+  margin-top: 0.5rem;
+}
+
+#imgDetalle img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.imgDetalleBody {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+} 
+
+.imageResponsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.date {
+
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+
+/*-----------------------------------Presentación-----------*/
+
+.figsvg{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#brazo{
+  animation: animation--arman 3s infinite;
+}
+
+#fig1{
+  transform-origin: center center;
+  animation: animation--fig 3s infinite;
+}
+
+#fig2{
+  transform-origin: center center;
+  animation: animation--fig 4s  infinite;
+}
+
+#fig3{
+  transform-origin: center center;
+  animation: animation--fig 6s infinite;
+}
+
+
+
+@keyframes animation--arman{
+  25%{ transform: rotate(0deg) translateX(-1%);}
+  50%{ transform: rotate(1deg);}
+  75%{ transform: rotate(0deg) translateX(1%);}
+}
+
+@keyframes animation--fig{
+  0% { transform: scale(0);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+blockquote {
+  color: rgb(0, 0, 0);
+  padding: 1.2rem;
+  margin: 0;
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+blockquote div {
+  margin-top: 1rem;
+}
+
+
+.cites {
+  padding-left: 2.7rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+figure .boxIframe {
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.boxIframe iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+figure figcaption {
+  margin-top: 0.5rem;
+}
+
+/*------------------------Fuentes---------------------------*/
+
+
+
+dt {
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+dt::before {
+  content: "▸";
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  color: rgb(240, 93, 80);
+}
+
+dd {
+  margin-bottom: 1.8rem;
+}
+
+
+
+@media all and (min-width: 820px) {
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8rem 4rem 4rem 4rem;
+  }
+
+  header {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: unset;
+    gap: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  #logo {
+    padding-left: 2rem;
+  }
+  
+
+  header nav {
+    padding-right: 2rem;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: end;
+  }
+
+  header nav>ul {
+    margin: 0;
+    padding: 0;
+    text-align: end;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    list-style-type: none;
+  }
+  
+  .cotainer-foot-columns{
+    grid-template-columns: repeat(4, 1fr) ;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    gap: 1rem;
+  }
+  
+  .footer-column{
+    padding: 1rem;
+  }
+  
+
+
+  #portada {
+    margin-top: 7.5rem;
+  }
+
+  .portada-contenido h1 {
+    font-size: 4rem;
+  }
+
+  .portada-contendio p {
+    font-size: 1.5rem;
+  }
+
+  .portada-contendio button {
+    font-size: 1.5rem;
+  }
+
+
+
+
+  .card {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+
+  .imgCard img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .infoCard {
+    grid-column: 3/5;
+    align-items: center !important;
+    padding-bottom: 2rem;
+  }
+
+  .pages {
+    background-color: rgb(245, 245, 245);
+  }
+
+  /*--------------------------Presentación__________*/
+
+  .figsvg{
+    width: 50%;
+  }
+  
+  blockquote {
+    margin: 2rem;
+  }
+
+/*------------------------Detalle------------------*/
+.imgDetalleBody {
+  width: 65%;
+} 
+ 
+
+}
