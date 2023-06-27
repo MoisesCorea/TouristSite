@@ -8,5 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   button.addEventListener('click', () => {
     window.location.href = 'sitios.html'
   })
+
+  lazySizes.init();
 })
+
 
