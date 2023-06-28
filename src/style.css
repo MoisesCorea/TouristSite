@@ -178,8 +178,9 @@ footer img {
 /*--------------------------------Portada----------------------------*/
 #portada {
   position: relative;
-  background: url(images/fondo.webp) no-repeat center;
-  
+  background-image: url(images/fondo1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 80vh;
   width: auto;
@@ -452,7 +453,7 @@ dd {
   }
 
   #logo {
-    padding-left: 1.5rem;
+    padding-left: 2rem;
   }
   
 
